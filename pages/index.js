@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
-import PictureToggleOnMouseOver from '../src/PictureToggleOnMouseOver';
+
 
 import ImageChangeOnMouseOver from './ImageChangeOnMouseOver';
+import ImageChangeOnScroll from './ImageChangeOnScroll';
 
 const InputElement = () => {
     const [inputText, setInputText] = useState(" ");
@@ -26,8 +27,8 @@ const InputElement = () => {
                 })}
             </ul>
             <div>
-                <ImageChangeOnMouseOver />
-                <PictureToggleOnMouseOver />
+                {/* <ImageChangeOnMouseOver /> */}
+               <ImageChangeOnScroll/>
 
             </div>
         </div>
